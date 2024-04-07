@@ -1,0 +1,174 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./font/promptfont-gh-pages/promptfont.ttf);
+  }
+
+body {
+    /* background-color: green; */
+    font-family: myFirstFont;
+    font-size: 14px;
+}
+
+.wrapper {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.494);
+    padding: 10px;
+}
+
+.inputs-display {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    height: 100px;
+    width: 500px;
+    align-items: center;
+    gap: 50%;
+}
+
+.inputs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l, .r, .u, .d {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+}
+
+.l, .r {
+    top: 50%;
+}
+
+.u, .d {
+    left: 50%
+}
+
+.l {
+    left: 0;
+}
+
+.r {
+    left: 100%;
+}
+
+.u {
+    top: 0;
+}
+
+.d {
+    top: 100%;
+}
+
+.input-type-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #404456;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.input-type-wrapper img {
+    display: flex;
+    height: 25px;
+    width: 25px;
+    padding: 5px 5px;
+}
+
+.input-type-wrapper span {
+    display: flex;
+    width: 100%
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.input-with-icon {
+    background-color: #404456;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gsm-inputs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.selected-row > .controller-input {
+    background-color: #1C1F2A;
+    color: white;
+}
+
+.selected-input.controller-input {
+    outline: 2px solid #499aff;
+}
+
+.selected-letter {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.controller-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #404456;
+    outline: 1px solid #1C1F2A;
+    color: #1C1F2A;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.capitalize {
+    text-transform: uppercase;
+}
+
+.input-letter {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* font-weight: 900; */
+}
+
+.label-icon {
+    padding-right: 5px;
+    border-right: 1px solid white;
+}
+
+/* 1C1F2A */
+.type {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.secondary-btn {
+    display: flex;
+    gap: 10px;
+}
+
+img.label-image {
+    margin: 0px 10px;
+    padding: 0px;
+}

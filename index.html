@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./main.css">
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <title>Hello World!</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="secondary-btn">
+                <div class="input-type-wrapper">
+                    <img class="label-icon" src="./icons/dualshock/press-L3-1.svg"/>
+                    <div class="type" id="input-type">
+                        <span>abc</span>
+                    </div>
+                </div>
+                <div class="input-type-wrapper">
+                    <img class="label-icon" src="./icons/dualshock/outline-R1.svg"/>
+                    <img class="label-image" src="./icons/dualshock/space-bar-svgrepo-com.svg"/>
+                    <!-- <div class="type" id="input-type">
+                        <span></span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="input-with-icon">
+                <div class="gsm-inputs">
+                    <div class="input-row selected-row">
+                        <div class="controller-input">
+                            <img class="label-icon" src="./icons/dualshock/plain-cross.svg"/>
+                            <div class="selected-input input-letter">
+                                <span id="first">a</span>
+                                <span>b</span>
+                                <span>c</span>
+                            </div>
+                        </div>
+                        <div class="controller-input">
+                            <img class="label-icon" src="./icons/dualshock/plain-square.svg"/>
+                            <div class="input-letter">
+                                <span>d</span>
+                                <span>e</span>
+                                <span>f</span>
+                            </div>
+                        </div>
+                        <div class="controller-input">
+                            <img class="label-icon" src="./icons/dualshock/plain-circle.svg"/>
+                            <div class="input-letter">
+                                <span>g</span>
+                                <span>h</span>
+                                <span>i</span>
+                            </div>
+                        </div>
+                        <div class="controller-input">
+                            <img class="label-icon" src="./icons/dualshock/plain-triangle.svg"/>
+                            <div class="input-letter">
+                                <span>j</span>
+                                <span>k</span>
+                                <span>l</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="controller-input">
+                            <img class="label-icon" src="./icons/dualshock/plain-cross.svg"/>
+                            <div class="input-letter">
+                                <span>m</span>
+                                <span>n</span>
+                                <span>o</span>
+                            </div>
+                        </div>
+                        <div class="controller-input">
+                            <img class="label-icon" src="./icons/dualshock/plain-square.svg"/>
+                            <div class="input-letter">
+                                <span>p</span>
+                                <span>q</span>
+                                <span>r</span>
+                            </div>
+                        </div>
+                        <div class="controller-input">
+                            <img class="label-icon" src="./icons/dualshock/plain-circle.svg"/>
+                            <div class="input-letter">
+                                <span>s</span>
+                                <span>t</span>
+                                <span>u</span>
+                                <span>v</span>
+                            </div>
+                        </div>
+                        <div class="controller-input">
+                            <img class="label-icon" src="./icons/dualshock/plain-triangle.svg"/>
+                            <div class="input-letter">
+                                <span>w</span>
+                                <span>x</span>
+                                <span>y</span>
+                                <span>z</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="inputs-display">
+            <div class="inputs left-display">
+                <span class="l">E</span>
+                <span class="r">F</span>
+                <span class="u">G</span>
+                <span class="d">H</span>
+            </div>
+            <div class="inputs right-display">
+                <span class="l">A</span>
+                <span class="r">B</span>
+                <span class="u">C</span>
+                <span class="d">D</span>
+            </div>
+        </div>
+        <div class="input-container">
+
+        </div> -->
+    </body>
+    <script src="./mapping.js"></script>
+    <script src="./VKeyboard.js"></script>
+    <script src="./renderer.js"></script>
+</html>
