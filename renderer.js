@@ -90,11 +90,7 @@ window.electronAPI.onInput((e, value) => {
         selectedLetter = selectedControllerInputs.querySelectorAll('span')[value.selectedChar];
         if (selectedLetter && !selectedLetter.classList.contains('selected-letter')) selectedLetter.classList.add('selected-letter')
     }
-
-    // console.log(value);
 })
-
-
 
 IsValueInRange = (value, threshold) => {
     if (value > 0.1) return value > threshold
@@ -107,13 +103,3 @@ function getGamepad() {
 }
 
 const container = document.querySelector(".input-container");
-// const vkeyboard = new VKeyboard(container, "")
-
-// function renderButton() {
-//     const controller = getGamepad();
-//     vkeyboard.Update(controller);
-
-//     vkeyboard.Display();
-
-//     if (vkeyboard.ControllerBtnPressed(0)) window.electronAPI.btnPressed(0);
-// }
